@@ -1,0 +1,39 @@
+body{
+	background: #e8faff; /* Old browsers */
+background: -moz-radial-gradient(center, ellipse cover,  #e8faff 0%, #e2f9ff 100%); /* FF3.6+ */
+background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#e8faff), color-stop(100%,#e2f9ff)); /* Chrome,Safari4+ */
+background: -webkit-radial-gradient(center, ellipse cover,  #e8faff 0%,#e2f9ff 100%); /* Chrome10+,Safari5.1+ */
+background: -o-radial-gradient(center, ellipse cover,  #e8faff 0%,#e2f9ff 100%); /* Opera 12+ */
+background: -ms-radial-gradient(center, ellipse cover,  #e8faff 0%,#e2f9ff 100%); /* IE10+ */
+background: radial-gradient(ellipse at center,  #e8faff 0%,#e2f9ff 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e8faff', endColorstr='#e2f9ff',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+.lamp-wrapper{
+	position: relative;
+	height: 316px;
+	width: 200px;
+}
+.lamp-top{
+	border-bottom: 100px solid #E57955;
+	border-left: 50px solid transparent;
+	border-right: 50px solid transparent;
+	height: 0;
+	width: 100px;
+}
+.lamp-stick{
+	width: 18px;
+	height: 200px;
+	background: #935039;
+	margin-left: 92px;
+}
+.lamp-bottom{
+	border-top: 16px solid #935039;
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	height: 0;
+	width: 100px;
+	margin-left: 39px;
+}
+.lamp-bulb{
+	
+}
