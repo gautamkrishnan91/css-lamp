@@ -1,5 +1,11 @@
 body{
 	background: #000; /* Old browsers */
+	transition: all 0.2s ease-in-out;
+	-moz-transition: all 0.2s ease-in-out;
+	-webkit-transition: all 0.2s ease-in-out;
+}
+body.lighter{
+	background: #181818;
 }
 .lamp-outer{
 	position: absolute;

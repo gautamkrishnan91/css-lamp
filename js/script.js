@@ -3,4 +3,5 @@ $('.lamp-switch').click(function(){
 	$('.lamp-switch').toggleClass('moveDown');
 	$('.lamp-bulb').toggleClass('lightUp');
 	$('.bulbBottom').toggleClass('lightUp');
+	$('body').toggleClass('lighter');
 })
