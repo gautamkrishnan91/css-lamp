@@ -1,17 +1,18 @@
 body{
-	background: #e8faff; /* Old browsers */
-background: -moz-radial-gradient(center, ellipse cover,  #e8faff 0%, #e2f9ff 100%); /* FF3.6+ */
-background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#e8faff), color-stop(100%,#e2f9ff)); /* Chrome,Safari4+ */
-background: -webkit-radial-gradient(center, ellipse cover,  #e8faff 0%,#e2f9ff 100%); /* Chrome10+,Safari5.1+ */
-background: -o-radial-gradient(center, ellipse cover,  #e8faff 0%,#e2f9ff 100%); /* Opera 12+ */
-background: -ms-radial-gradient(center, ellipse cover,  #e8faff 0%,#e2f9ff 100%); /* IE10+ */
-background: radial-gradient(ellipse at center,  #e8faff 0%,#e2f9ff 100%); /* W3C */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e8faff', endColorstr='#e2f9ff',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+	background: #000; /* Old browsers */
+}
+.lamp-outer{
+	position: absolute;
+	width: 100%;
+	height: 316px;
+	top: 50%;
+	margin-top: -158px;
 }
 .lamp-wrapper{
 	position: relative;
 	height: 316px;
 	width: 200px;
+	margin: 0 auto;
 }
 .lamp-top{
 	border-bottom: 100px solid #E57955;
@@ -35,5 +36,80 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e8faff', end
 	margin-left: 39px;
 }
 .lamp-bulb{
-	
+	position: absolute;
+	width: 30px;
+	height: 30px;
+	background: #e28363;
+	border-radius: 100%;
+	z-index: 20;
+	margin: 52px 86px;
+	transition: all 0.2s ease-in-out;
+	-moz-transition: all 0.2s ease-in-out;
+	-webkit-transition: all 0.2s ease-in-out;
+}
+.lamp-bulb span{
+	width: 12px;
+	height: 0;
+	border-top: 16px solid #e28363;
+	border-left: 6px solid transparent;
+	border-right: 6px solid transparent;
+	position: absolute;
+	margin-top: 24px;
+	margin-left: 3px;
+	z-index: 100;
+	transition: all 0.2s ease-in-out;
+	-moz-transition: all 0.2s ease-in-out;
+	-webkit-transition: all 0.2s ease-in-out;
+}
+.lamp-bulb.lightUp{
+	-webkit-box-shadow: 0px 0px 250px 125px rgba(255, 255, 190, .3);
+	-moz-box-shadow: 0px 0px 250px 125px rgba(255, 255, 190, .3);
+	box-shadow: 0px 0px 250px 125px rgba(255, 255, 190, .3);
+	background: #efd092;								
+}
+.bulbBottom.lightUp{
+	border-top: 16px solid #efd092;
+}
+.lamp-switch-hanging{
+	background: transparent;
+	border-left: 2px dotted #edd097;
+	height: 60px;
+	width: 2px;
+	position: absolute;
+	margin: 90px 0 0 160px;
+	z-index: -1;
+	transition: all 0.2s ease-in-out;
+	-moz-transition: all 0.2s ease-in-out;
+	-webkit-transition: all 0.2s ease-in-out;
+}
+.lamp-switch-hanging.moveDown{
+	margin-top: 94px;
+}
+.lamp-switch.moveDown{
+	margin-top: 154px;
+}
+.lamp-switch{
+	border-bottom: 16px solid #edd097;
+	border-left: 4px solid transparent;
+	border-right: 4px solid transparent;
+	height: 0;
+	width: 8px;
+	position: absolute;
+	margin: 150px 0 0 153px;
+	cursor: pointer;
+	transition: all 0.2s ease-in-out;
+	-moz-transition: all 0.2s ease-in-out;
+	-webkit-transition: all 0.2s ease-in-out;
+}
+.lamp-switch:after{
+	content: "";
+	position: absolute;
+	width: 12px;
+	height: 15px;
+	background: #edd097;
+	border-radius: 30% 90%;
+	-webkit-transform: rotate(121deg);
+	-moz-transform: rotate(121deg);
+	transform: rotate(121deg);
+	margin: 7px 0 0 -2px;
 }
